@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply text-[50%] md:text-[56.25%] lg:text-[62.5%] 2xl:text-[80%];
+}
+@layer base {
+  @font-face {
+    font-family: "Alata";
+    font-display: swap;
+    font-weight: 400;
+    src: url("/assets/fonts/Alata/Alata-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Josefin Sans";
+    font-display: swap;
+    font-weight: 100 900;
+    src: url("/assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
+      format("truetype");
+  }
+}
