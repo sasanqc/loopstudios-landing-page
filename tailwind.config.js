@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "header-desktop": "url('./assets/images/desktop/image-hero.jpg')",
-        "header-mobile": "url('./assets/images/mobile/image-hero.jpg')",
+        "header-desktop": "url('../assets/images/desktop/image-hero.jpg')",
+        "header-mobile": "url('../assets/images/mobile/image-hero.jpg')",
       },
     },
     screens: {

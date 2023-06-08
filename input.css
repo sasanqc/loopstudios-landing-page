@@ -10,13 +10,13 @@ html {
     font-family: "Alata";
     font-display: swap;
     font-weight: 400;
-    src: url("./assets/fonts/Alata/Alata-Regular.ttf") format("truetype");
+    src: url("../assets/fonts/Alata/Alata-Regular.ttf") format("truetype");
   }
   @font-face {
     font-family: "Josefin Sans";
     font-display: swap;
     font-weight: 100 900;
-    src: url("./assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
+    src: url("../assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
       format("truetype");
   }
 }
