@@ -730,7 +730,7 @@ video {
 }
 
 .bg-header-mobile {
-  background-image: url('../assets/images/mobile/image-hero.jpg');
+  background-image: url('./../assets/images/mobile/image-hero.jpg');
 }
 
 .bg-cover {
@@ -1055,7 +1055,7 @@ html {
   }
 
   .md\:bg-header-desktop {
-    background-image: url('../assets/images/desktop/image-hero.jpg');
+    background-image: url('./../assets/images/desktop/image-hero.jpg');
   }
 
   .md\:px-0 {
