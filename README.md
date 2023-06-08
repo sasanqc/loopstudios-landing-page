@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Loopstudios landing page](https://entertainment-web-app-sasanqc.netlify.app/)
+- Live Site URL: [Loopstudios landing page](https://sasanqc.github.io/loopstudios-landing-page/)
 
 ## My process
 
