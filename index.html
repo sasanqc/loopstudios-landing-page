@@ -7,14 +7,335 @@
     <title>Loopstudios Landing Page</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body class="font-alata">
-    <header
-      class="bg-header-mobile md:bg-header-desktop px-12 md:px-64 text-white bg-no-repeat bg-cover inline-block w-full"
+    <section
+      id="mobile-menu"
+      class="w-full bg-black h-screen fixed z-40 px-12 hidden"
     >
-      <div class="flex justify-between items-center mb-48 md:pt-28 pt-20">
-        <img src="/assets/images/logo.svg" alt="" class="w-72 md:w-96" />
-        <nav class="hidden md:block">
-          <ul class="flex flex-row gap-12 font-alata text-base">
+      <div class="py-20 flex flex-row justify-between mb-60">
+        <img src="/assets/images/logo.svg" alt="" class="w-72" />
+        <svg
+          id="close-btn"
+          width="20"
+          height="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+            fill="#FFF"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <nav>
+        <ul class="flex flex-col gap-y-12 text-white">
+          <li>
+            <a href="" class="uppercase text-sm font-josefin">about</a>
+          </li>
+          <li>
+            <a href="" class="uppercase text-sm font-josefin">careers</a>
+          </li>
+          <li>
+            <a href="" class="uppercase text-sm font-josefin">events</a>
+          </li>
+          <li>
+            <a href="" class="uppercase text-sm font-josefin">products</a>
+          </li>
+          <li>
+            <a href="" class="uppercase text-sm font-josefin">support</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <header
+      class="bg-header-mobile md:bg-header-desktop text-white bg-no-repeat bg-cover inline-block w-full mb-48"
+    >
+      <div class="max-w-screen-xl mx-auto px-12 md:px-64">
+        <div class="flex justify-between items-center mb-48 md:pt-28 pt-20">
+          <img src="/assets/images/logo.svg" alt="" class="w-72 md:w-96" />
+          <nav class="hidden md:block">
+            <ul class="flex flex-row gap-12 font-alata text-base">
+              <li class="group">
+                <a href="">About</a>
+                <div
+                  class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
+                ></div>
+              </li>
+              <li class="group">
+                <a href="">Careers</a>
+                <div
+                  class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
+                ></div>
+              </li>
+              <li class="group">
+                <a href="" class="">Events</a>
+                <div
+                  class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
+                ></div>
+              </li>
+              <li class="group">
+                <a href="" class="">Products</a>
+                <div
+                  class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
+                ></div>
+              </li>
+              <li class="group">
+                <a href="" class="">Support</a>
+                <div
+                  class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
+                ></div>
+              </li>
+            </ul>
+          </nav>
+          <svg
+            width="24"
+            height="16"
+            xmlns="http://www.w3.org/2000/svg"
+            class="md:hidden cursor-pointer"
+            id="menu-btn"
+          >
+            <g fill="#FFF" fill-rule="evenodd">
+              <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+            </g>
+          </svg>
+        </div>
+        <h3
+          class="text-xl w-full md:text-3xl text-white p-16 uppercase font-josefin md:max-w-4xl border-1 border-white border-2 mb-80 md:mb-60"
+        >
+          Immersive experiences that deliver
+        </h3>
+      </div>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto px-12 md:px-32 lg:px-64">
+      <section class="relative mb-72">
+        <img
+          src="/assets/images/desktop/image-interactive.jpg"
+          alt=""
+          class="mb-24 md:mb-0"
+        />
+        <div
+          class="w-full md:w-[540px] bg-white md:pt-36 md:pl-36 md:absolute md:right-0 md:bottom-0 px-16 md:px-0"
+        >
+          <h1
+            class="text-center md:text-left font-josefin uppercase text-lg md:text-2xl mb-12 md:mb-10"
+          >
+            The leader in interactive VR
+          </h1>
+          <p class="text-darkGray text-base text-center md:text-left">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+      <section
+        class="grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-12 justify-items-stretch items-center mb-96"
+      >
+        <h1
+          class="md:col-span-3 text-lg font-josefin uppercase justify-self-center md:justify-self-start mb-24 md:mb-40"
+        >
+          our creation
+        </h1>
+
+        <div class="group gallery">
+          <picture>
+            <source
+              srcset="/assets/images/mobile/image-deep-earth.jpg"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="/assets/images/desktop/image-deep-earth.jpg"
+              alt=""
+              class="w-full group-hover:scale-110 transition-all"
+            />
+          </picture>
+          <h1 class="gallery__title group-hover:text-black">deep earth</h1>
+        </div>
+        <div class="group gallery">
+          <picture>
+            <source
+              srcset="/assets/images/mobile/image-night-arcade.jpg"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="/assets/images/desktop/image-night-arcade.jpg"
+              alt=""
+              class="w-full group-hover:scale-110 transition-all"
+            />
+          </picture>
+          <h1 class="gallery__title group-hover:text-black">NIGHT ARCADE</h1>
+        </div>
+        <div class="group gallery">
+          <picture>
+            <source
+              srcset="/assets/images/mobile/image-soccer-team.jpg"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="/assets/images/desktop/image-soccer-team.jpg"
+              alt=""
+              class="w-full group-hover:scale-110 transition-all"
+            />
+          </picture>
+          <h1 class="gallery__title group-hover:text-black">SOCCER TEAM VR</h1>
+        </div>
+        <div class="group gallery">
+          <picture>
+            <source
+              srcset="/assets/images/mobile/image-grid.jpg"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="/assets/images/desktop/image-grid.jpg"
+              alt=""
+              class="w-full group-hover:scale-110 transition-all"
+            />
+          </picture>
+          <h1 class="gallery__title group-hover:text-black">THE GRID</h1>
+        </div>
+        <div class="group gallery">
+          <picture>
+            <source
+              srcset="/assets/images/mobile/image-from-above.jpg"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="/assets/images/desktop/image-from-above.jpg"
+              alt=""
+              class="w-full group-hover:scale-110 transition-all"
+            />
+          </picture>
+          <h1 class="gallery__title group-hover:text-black">FROM UPABOVE VR</h1>
+        </div>
+        <div class="group gallery">
+          <picture>
+            <source
+              srcset="/assets/images/mobile/image-pocket-borealis.jpg"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="/assets/images/desktop/image-pocket-borealis.jpg"
+              alt=""
+              class="w-full group-hover:scale-110 transition-all"
+            />
+          </picture>
+          <h1 class="gallery__title group-hover:text-black">POCKET BOREALIS</h1>
+        </div>
+        <div class="group gallery">
+          <picture>
+            <source
+              srcset="/assets/images/mobile/image-curiosity.jpg"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="/assets/images/desktop/image-curiosity.jpg"
+              alt=""
+              class="w-full group-hover:scale-110 transition-all"
+            />
+          </picture>
+          <h1 class="gallery__title group-hover:text-black">THE CURIOSITY</h1>
+        </div>
+        <div class="group gallery">
+          <picture>
+            <source
+              srcset="/assets/images/mobile/image-fisheye.jpg"
+              media="(max-width: 767px)"
+            />
+
+            <img
+              src="/assets/images/desktop//image-fisheye.jpg"
+              alt=""
+              class="w-full group-hover:scale-110 transition-all"
+            />
+          </picture>
+          <h1 class="gallery__title group-hover:text-black">MAKE IT FISHEYE</h1>
+        </div>
+        <a
+          href=""
+          class="text-base md:mb-40 uppercase hover:bg-black hover:text-white transition-colors py-6 px-16 border tracking-[5px] justify-self-center md:justify-self-end md:row-start-1 md:row-end-1 md:col-start-4 md:col-end-4"
+          >see all</a
+        >
+      </section>
+    </main>
+    <footer class="bg-black">
+      <div
+        class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 justify-items-center md:justify-items-start gap-y-16 md:gap-y-5 text-white px-12 md:px-64 py-16"
+      >
+        <img src="/assets/images/logo.svg" alt="" />
+        <div
+          class="row-start-3 md:row-start-1 md:col-start-2 md:justify-self-end flex gap-4 items-center [&>*]:transition-colors [&>*]:border-b-4 [&>*:hover]:border-b-4 [&>*:hover]:border-white [&>*]:border-black [&>*:hover]:cursor-pointer"
+        >
+          <div>
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mb-2"
+            >
+              <path
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </div>
+          <div>
+            <svg
+              width="24"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mb-2"
+            >
+              <path
+                d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </div>
+          <div>
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mb-2"
+            >
+              <path
+                d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </div>
+          <div>
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mb-2"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </div>
+        </div>
+        <nav class="">
+          <ul
+            class="flex flex-col md:flex-row gap-12 font-alata text-base items-center"
+          >
             <li class="group">
               <a href="">About</a>
               <div
@@ -40,287 +361,28 @@
               ></div>
             </li>
             <li class="group">
-              <a href="" class="">Support</a>
+              <a href="">Support</a>
               <div
                 class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
               ></div>
             </li>
           </ul>
         </nav>
-        <svg
-          width="24"
-          height="16"
-          xmlns="http://www.w3.org/2000/svg"
-          class="md:hidden cursor-pointer"
-        >
-          <g fill="#FFF" fill-rule="evenodd">
-            <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
-          </g>
-        </svg>
+        <p class="md:justify-self-end text-darkGray text-base">
+          © 2021 Loopstudios. All rights reserved.
+        </p>
       </div>
-      <h3
-        class="text-xl w-full md:text-3xl text-white p-16 uppercase font-josefin md:max-w-4xl border-1 border-white border-2 mb-80 md:mb-60"
-      >
-        Immersive experiences that deliver
-      </h3>
-    </header>
-
-    <main>
-      <section
-        class="flex items-center relative px-12 md:pl-64 pt-48 md:pt-64 mb-44 md:mb-64 flex-col md:flex-row"
-      >
-        <div class="w-full md:w-1/2 bg-darkGray">
-          <img
-            src="/assets/images/desktop/image-interactive.jpg"
-            alt=""
-            class="w-full"
-          />
-        </div>
-        <div
-          class="px-12 mx:px-0 pt-24 md:pt-36 md:pl-36 md:pr-32 w-full md:w-1/2 md:absolute bg-white md:right-36 md:bottom-0 text-center md:text-left"
-        >
-          <h1 class="text-2xl font-josefin uppercase mb-10">
-            The leader in interactive VR
-          </h1>
-          <p class="text-darkGray text-base text-center md:text-left">
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
-          </p>
-        </div>
-      </section>
-      <section
-        class="grid grid-cols-1 md:grid-cols-4 gap-x-12 gap-y-12 px-12 md:px-64 justify-items-stretch items-center mb-96"
-      >
-        <h1
-          class="md:col-span-3 text-lg font-josefin uppercase justify-self-center md:justify-self-start"
-        >
-          our creation
-        </h1>
-
-        <div class="w-full">
-          <picture>
-            <source
-              srcset="/assets/images/mobile/image-deep-earth.jpg"
-              media="(max-width: 767px)"
-            />
-
-            <img
-              src="/assets/images/desktop/image-deep-earth.jpg"
-              alt=""
-              class="w-full"
-            />
-          </picture>
-        </div>
-        <div class="w-full">
-          <picture>
-            <source
-              srcset="/assets/images/mobile/image-night-arcade.jpg"
-              media="(max-width: 767px)"
-            />
-
-            <img
-              src="/assets/images/desktop/image-night-arcade.jpg"
-              alt=""
-              class="w-full"
-            />
-          </picture>
-        </div>
-        <div class="w-full">
-          <picture>
-            <source
-              srcset="/assets/images/mobile/image-soccer-team.jpg"
-              media="(max-width: 767px)"
-            />
-
-            <img
-              src="/assets/images/desktop/image-soccer-team.jpg"
-              alt=""
-              class="w-full"
-            />
-          </picture>
-        </div>
-        <div class="w-full">
-          <picture>
-            <source
-              srcset="/assets/images/mobile/image-grid.jpg"
-              media="(max-width: 767px)"
-            />
-
-            <img
-              src="/assets/images/desktop/image-grid.jpg"
-              alt=""
-              class="w-full"
-            />
-          </picture>
-        </div>
-        <div class="">
-          <picture>
-            <source
-              srcset="/assets/images/mobile/image-from-above.jpg"
-              media="(max-width: 767px)"
-            />
-
-            <img
-              src="/assets/images/desktop/image-from-above.jpg"
-              alt=""
-              class="w-full"
-            />
-          </picture>
-        </div>
-        <div class="">
-          <picture>
-            <source
-              srcset="/assets/images/mobile/image-pocket-borealis.jpg"
-              media="(max-width: 767px)"
-            />
-
-            <img
-              src="/assets/images/desktop/image-pocket-borealis.jpg"
-              alt=""
-              class="w-full"
-            />
-          </picture>
-        </div>
-        <div class="">
-          <picture>
-            <source
-              srcset="/assets/images/mobile/image-curiosity.jpg"
-              media="(max-width: 767px)"
-            />
-
-            <img
-              src="/assets/images/desktop/image-curiosity.jpg"
-              alt=""
-              class="w-full"
-            />
-          </picture>
-        </div>
-        <div class="">
-          <picture>
-            <source
-              srcset="/assets/images/mobile/image-fisheye.jpg"
-              media="(max-width: 767px)"
-            />
-
-            <img
-              src="/assets/images/desktop//image-fisheye.jpg"
-              alt=""
-              class="w-full"
-            />
-          </picture>
-        </div>
-        <a
-          href=""
-          class="uppercase hover:bg-black hover:text-white transition-colors py-6 px-16 border tracking-[5px] justify-self-center md:justify-self-end md:row-start-1 md:row-end-1 md:col-start-4 md:col-end-4"
-          >see all</a
-        >
-      </section>
-    </main>
-    <footer
-      class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 justify-items-center md:justify-items-start gap-y-16 md:gap-y-5 bg-black text-white px-12 md:px-64 py-16"
-    >
-      <img src="/assets/images/logo.svg" alt="" />
-      <div
-        class="row-start-3 md:row-start-1 md:col-start-2 md:justify-self-end flex gap-4 items-center [&>*]:transition-colors [&>*]:border-b-4 [&>*:hover]:border-b-4 [&>*:hover]:border-white [&>*]:border-black [&>*:hover]:cursor-pointer"
-      >
-        <div>
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            class="mb-2"
-          >
-            <path
-              d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
-              fill="#FFF"
-              fill-rule="nonzero"
-            />
-          </svg>
-        </div>
-        <div>
-          <svg
-            width="24"
-            height="20"
-            xmlns="http://www.w3.org/2000/svg"
-            class="mb-2"
-          >
-            <path
-              d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
-              fill="#FFF"
-              fill-rule="nonzero"
-            />
-          </svg>
-        </div>
-        <div>
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            class="mb-2"
-          >
-            <path
-              d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
-              fill="#FFF"
-              fill-rule="nonzero"
-            />
-          </svg>
-        </div>
-        <div>
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            class="mb-2"
-          >
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
-              fill="#FFF"
-              fill-rule="nonzero"
-            />
-          </svg>
-        </div>
-      </div>
-      <nav class="">
-        <ul
-          class="flex flex-col md:flex-row gap-12 font-alata text-base items-center"
-        >
-          <li class="group">
-            <a href="">About</a>
-            <div
-              class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
-            ></div>
-          </li>
-          <li class="group">
-            <a href="">Careers</a>
-            <div
-              class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
-            ></div>
-          </li>
-          <li class="group">
-            <a href="" class="">Events</a>
-            <div
-              class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
-            ></div>
-          </li>
-          <li class="group">
-            <a href="" class="">Products</a>
-            <div
-              class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
-            ></div>
-          </li>
-          <li class="group">
-            <a href="">Support</a>
-            <div
-              class="w-12 h-1 group-hover:bg-white rounded-full relative left-1/2 translate-x-[-50%] transition-colors"
-            ></div>
-          </li>
-        </ul>
-      </nav>
-      <p class="md:justify-self-end text-darkGray text-base">
-        © 2021 Loopstudios. All rights reserved.
-      </p>
     </footer>
+    <script>
+      const menuBtn = document.querySelector("#menu-btn");
+      const mobileMenu = document.querySelector("#mobile-menu");
+      const closeBtn = document.querySelector("#close-btn");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+      });
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>

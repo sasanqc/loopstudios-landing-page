@@ -8,6 +8,12 @@ module.exports = {
         "header-mobile": "url('/assets/images/mobile/image-hero.jpg')",
       },
     },
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
     colors: {
       white: "hsl(0, 0%, 100%)",
       black: "hsl(0, 0%, 0%)",
@@ -19,8 +25,8 @@ module.exports = {
       josefin: "'Josefin Sans', sans serif",
     },
     fontSize: {
+      sm: ["2.4rem", { lineHeight: "2.5rem", fontWeight: "300" }],
       base: ["1.5rem", { lineHeight: "2.5rem", fontWeight: "400" }],
-
       lg: ["3.2rem", { lineHeight: "3.2rem", fontWeight: "300" }],
       xl: ["4.0rem", { lineHeight: "3.8rem", fontWeight: "300" }],
       "2xl": ["4.8rem", { lineHeight: "4.8rem", fontWeight: "300" }],
