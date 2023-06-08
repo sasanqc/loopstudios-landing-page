@@ -429,7 +429,7 @@ video {
 
   font-weight: 400;
 
-  src: url("/assets/fonts/Alata/Alata-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Alata/Alata-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -439,7 +439,7 @@ video {
 
   font-weight: 100 900;
 
-  src: url("/assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
+  src: url("./assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf")
       format("truetype");
 }
 
